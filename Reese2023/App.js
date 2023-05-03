@@ -31,7 +31,7 @@ function Main(props) {
     spanText4,
     spanText5,
     spanText6,
-    place,
+    mission,
     beBRAVE,
     program,
     pledge,
@@ -55,7 +55,7 @@ function Main(props) {
       <View style = {styles.buttons}>
         <View style = {styles.overlapGroupContainer}>
           <View style = {styles.overlapGroup2}>
-            <Pressable style = {styles.place}>{place}</Pressable>
+            <Pressable style = {styles.mission}>{mission}</Pressable>
           </View>
           <View style = {styles.overlapGroup3}>
             <Pressable style = {styles.beBRAVE}>{beBRAVE}</Pressable>
@@ -84,7 +84,7 @@ const mainData = {
   spanText4: "e-o",
   spanText5: "Urc",
   spanText6: "es",
-  place: "Mission",
+  mission: "Mission",
   beBRAVE: "Be B.R.A.V.E.",
   program: "Program",
   pledge: "Pledge",
