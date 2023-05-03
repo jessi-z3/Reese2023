@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import React from "react";
 
+import * as Font from 'expo-font';
+
 import {View, Text, Image, Pressable} from React;
 
 import {styles} from "Styles.js"
@@ -37,6 +39,21 @@ function Main(props) {
     pledge,
     braveLogo,
   } = props;
+  useEffect(() => {
+    async function loadFont() {
+      await Font.loadAsync({
+        'dancing script': require('./assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf'),
+        'gabriela': require('./assets/fonts/Gabriela/Gabriela-Regular.ttf'),
+      });
+
+      Text.defaultProps.style.fontFamily = 'dancing script';
+    }
+
+    loadFont();
+  }, []);
+
+
+    loadFont();
   return (
     <View style = {styles.overlapGroup4}>
       <View style = {styles.overlapGroup5}>

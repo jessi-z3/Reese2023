@@ -1,5 +1,3 @@
-import React from "react";
-
 import {StyleSheet} from React;
 
 export const styles = StyleSheet.create({
